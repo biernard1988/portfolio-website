@@ -5,7 +5,7 @@ function TabButton({ active, selectTab, children }) {
 
   return (
     <button onClick={selectTab}>
-      <p className="mr-3 font-semibold text-[#ADB7BE] border-b border-cyan-500">
+      <p className={`mr-3 font-semibold hover:text-white ${buttonClasses}`}>
         {children}
       </p>
     </button>
