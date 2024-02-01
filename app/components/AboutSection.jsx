@@ -59,7 +59,7 @@ function AboutSection() {
     });
   };
   return (
-    <section className="">
+    <section id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <Image
           className="rounded-lg shadow-lg"
@@ -71,13 +71,10 @@ function AboutSection() {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold mb-4">About Me</h2>
           <p className="text-base lg:text-lg ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-            consectetur, optio officiis perferendis soluta quo sapiente. Illum
-            quo doloribus nisi maxime, natus quaerat doloremque laboriosam, odit
-            pariatur numquam molestiae ab!. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Omnis suscipit nobis hic natus iusto
-            soluta sunt rem laboriosam quas doloremque excepturi et dolorum
-            perspiciatis commodi facilis dolore, corrupti inventore unde?
+            Junior Web Developer: HTML5 | CSS3 | JavaScript | Reactjs | Nextjs |
+            Nodejs | Bun | SQL | MongoDB | Bootstrap |Tailwind. Passionate about
+            learning more and more new technologies and being a better person
+            for myself and the community.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
