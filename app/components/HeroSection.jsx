@@ -38,7 +38,7 @@ function HeroSection() {
             <button className="bg-gradient-to-br from-cyan-500 to-green-600 hover:bg-gradient-to-bl hover:text-black px-6 py-3 w-full sm:w-fit mr-4 rounded-full">
               Hire me
             </button>
-            <button className="px-6 py-3 w-full sm:w-fit bg-transparent hover:bg-slate-800 rounded-full border border-white hover:border-transparent mt-2">
+            <button className="px-6 py-3 w-full sm:w-fit bg-transparent rounded-full border-2 border-white hover:border-cyan-500 mt-2">
               Download CV
             </button>
           </div>
