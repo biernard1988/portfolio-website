@@ -6,10 +6,11 @@ import ProjectTag from "./ProjectTag";
 const projectsData = [
   {
     id: 1,
-    title: "Project 1",
-    description: "Project 1 description",
+    title: "XRENTAL - Apartments Finder",
+    description:
+      "The App is dedicated to providing an intuitive, user-friendly experience for both prospective tenants and owners. A WBS CODING SCHOOL Full Stack Web and App Development Final Project created by Bernard Almeida, Eudes Costa Junior & Nnaemeka C. Emesowum",
     image: "/xrental.png",
-    tag: ["All", "Web"],
+    tag: ["All", "Web", "Mobile"],
     gitUrl: "https://github.com/AnthonyEmm/X-Rental-Apartments-Finder-",
     previewUrl: "https://xrental.onrender.com/",
   },

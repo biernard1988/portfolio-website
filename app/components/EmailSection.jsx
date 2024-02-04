@@ -1,35 +1,45 @@
 "use client";
-import React, { useState } from "react";
+import React, { useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
+import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function EmailSection() {
-  const [emailSubmitted, setEmailSubmitted] = useState(false);
-  const handleSubmit = async (e) => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
     e.preventDefault();
-    const data = {
-      email: e.target.email.value,
-      subject: e.target.subject.value,
-      message: e.target.message.value,
-    };
-    const JSONdata = JSON.stringify(data);
-    const endpoint = "/api/send";
+    emailjs
+      .sendForm(
+        "service_7ge1p1q",
+        "template_d2qteaz",
+        form.current,
+        "Fp4lObwyj0EFy-HWn"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
 
-    const options = {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSONdata,
-    };
-    const response = await fetch(endpoint, options);
-    const resData = await response.json();
-
-    if (response.status === 200) {
-      console.log("Message sent");
-      setEmailSubmitted(true);
-    }
+  const notify = () => {
+    toast.success("Email sent Successfully", {
+      position: "top-right",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+    });
   };
 
   return (
@@ -45,16 +55,16 @@ function EmailSection() {
           questions, please don't hesitate to contact me.
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="https://github.com/akshaykulkarni">
+          <Link href="https://github.com/biernard1988">
             <FontAwesomeIcon icon={faGithub} style={{ fontSize: "2rem" }} />
           </Link>
-          <Link href="https://github.com/akshaykulkarni">
+          <Link href="https://www.linkedin.com/in/bernard-almeida-da-costa/">
             <FontAwesomeIcon icon={faLinkedin} style={{ fontSize: "2rem" }} />
           </Link>
         </div>
       </div>
       <div>
-        <form className="flex flex-col gap-6" onSubmit={handleSubmit}>
+        <form className="flex flex-col gap-6" onSubmit={sendEmail} ref={form}>
           <div className="mb-6">
             <label htmlFor="email" className="block mb-2 text-sm font-medium">
               Your email
@@ -95,13 +105,24 @@ function EmailSection() {
           </div>
           <button
             type="submit"
+            onClick={notify}
+            value="Send"
             className="bg-green-500 hover:bg-gradient-to-r from-cyan-500 to-green-500 hover:text-black font-medium py-2.5 px-5 rounded-lg w-full"
           >
             Send Message
           </button>
-          {emailSubmitted && (
-            <p className="text-green-500">Email sent successfully!</p>
-          )}
+          <ToastContainer
+            position="top-right"
+            autoClose={2000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="dark"
+          />
         </form>
       </div>
     </section>
