@@ -14,6 +14,8 @@ const Tab_Data = [
         <li>JavaScript</li>
         <li>React.js</li>
         <li>Next.js</li>
+        <li>Node.js</li>
+        <li>Bun.js</li>
         <li>Bootstrap</li>
         <li>Tailwind</li>
         <li>Git</li>
