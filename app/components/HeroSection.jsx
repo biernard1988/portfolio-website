@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
 
@@ -33,25 +34,29 @@ function HeroSection() {
           <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6 lg:mb-0">
             I recently finished a 5 month intensive web & app development course
             at WBS Coding School - Berlin. I am currently looking for
-            opportunities to entry level web developer.
+            opportunities as Entry/Junior Web Developer.
           </p>
-          <div className="">
-            <button className="bg-gradient-to-br from-cyan-500 to-green-600 hover:bg-gradient-to-bl hover:text-black px-6 py-3 w-full sm:w-fit mr-4 rounded-full">
+          <div>
+            <Link
+              href="#contact"
+              className="bg-gradient-to-br from-cyan-500 to-green-600 hover:bg-gradient-to-bl hover:text-black px-6 py-3 w-full sm:w-fit mr-4 rounded-full transition-all"
+            >
               Hire me
-            </button>
-            <button className="px-6 py-3 w-full sm:w-fit bg-transparent rounded-full border-2 border-white hover:border-cyan-500 mt-2">
+            </Link>
+
+            <button className="px-6 py-3 w-full sm:w-fit bg-transparent rounded-full border-2 border-white hover:border-cyan-500 mt-2 transition-all">
               Download CV
             </button>
           </div>
         </div>
         <div className="col-span-5 place-self-center mt-4 lg:mt-0">
-          <div className="rounded-full bg-[#4c514d76] w-[310px] h-[310px] relative">
+          <div className="rounded-full bg-[#4c514d76] w-[350px] h-[350px] relative">
             <Image
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              src="/eu.png"
-              width={180}
-              height={320}
-              alt="eu"
+              src="/eu2.png"
+              width={200}
+              height={350}
+              alt="My profile picture"
             />
           </div>
         </div>

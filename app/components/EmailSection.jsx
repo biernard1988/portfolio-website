@@ -10,6 +10,17 @@ import "react-toastify/dist/ReactToastify.css";
 function EmailSection() {
   const form = useRef();
 
+  /*  const [user, setUser] = useState({
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setUser({ ...user, [e.target.name]: value });
+  }; */
+
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
@@ -73,6 +84,8 @@ function EmailSection() {
               name="email"
               type="email"
               id="email"
+              /* onChange={handleChange}
+              value={user.email} */
               required
               placeholder="your@email.com"
               className="bg-[#18191E] border border-[#ADB7BE] placeholder-[#9CA2AE] rounded-lg p-2 text-sm w-full block"
