@@ -52,7 +52,17 @@ const projectsData = [
     image: "/pokefight.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/biernard1988/Pokefight",
-    previewUrl: "#",
+    previewUrl: "https://pokefight-044.netlify.app/",
+  },
+  {
+    id: 6,
+    title: "Country List",
+    description:
+      "Country List project for study purposes using Next.js and Tailwind CSS",
+    image: "/countrylist.png",
+    tag: ["All", "Web", "Mobile"],
+    gitUrl: "https://github.com/biernard1988/country-list",
+    previewUrl: "https://country-list-gamma.vercel.app/",
   },
 ];
 
