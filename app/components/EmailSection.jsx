@@ -66,10 +66,13 @@ function EmailSection() {
           questions, please don't hesitate to contact me.
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="https://github.com/biernard1988">
+          <Link target="_blank" href="https://github.com/biernard1988">
             <FontAwesomeIcon icon={faGithub} style={{ fontSize: "2rem" }} />
           </Link>
-          <Link href="https://www.linkedin.com/in/bernard-almeida-da-costa/">
+          <Link
+            target="_blank"
+            href="https://www.linkedin.com/in/bernard-almeida-da-costa/"
+          >
             <FontAwesomeIcon icon={faLinkedin} style={{ fontSize: "2rem" }} />
           </Link>
         </div>
