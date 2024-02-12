@@ -98,7 +98,7 @@ function ProjectSection() {
           />
         </div>
         <div className="grid md:grid-cols-2 gap-8 md:gap-12">
-          {projectsData.map((project) => (
+          {filteredProjects.map((project, index) => (
             <ProjectCard
               key={project.id}
               title={project.title}

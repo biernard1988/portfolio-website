@@ -23,8 +23,8 @@ const navLinks = [
 function Navbar() {
   const [navbarOpen, setNavbarOpen] = useState(false);
   return (
-    <nav className="fixed w-full bg-[#121212] bg-opacity-100">
-      <div className="flex flex-wrap items-center justify-between mx-auto mt-3 px-10 ">
+    <nav className="fixed w-full mx-auto z-10 py-2 border-b border-[#33353F] bg-[#1212128f] bg-opacity-100">
+      <div className="flex container flex-wrap lg:py-4 items-center justify-between mx-auto px-10">
         <Link href="/" className="text-2xl md:text-5xl font-semibold">
           {/*  LOGO */}
         </Link>
