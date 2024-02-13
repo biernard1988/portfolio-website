@@ -8,7 +8,7 @@ const projectsData = [
     id: 1,
     title: "XRENTAL - Apartments Finder",
     description:
-      "The App is dedicated to providing an intuitive, user-friendly experience for both prospective tenants and owners. A WBS CODING SCHOOL Full Stack Web and App Development Final Project created by Bernard Almeida, Eudes Costa Junior & Nnaemeka C. Emesowum",
+      "The App is dedicated to providing an intuitive, user-friendly experience for both prospective tenants and owners. A WBS CODING SCHOOL Full Stack Web and App Development Final Project created by Bernard Almeida da Costa, Eudes Costa Junior & Nnaemeka C. Emesowum",
     image: "/xrental.png",
     tag: ["All", "Web", "Mobile"],
     gitUrl: "https://github.com/biernard1988/X-Rental-Apartments-Finder",
@@ -18,7 +18,7 @@ const projectsData = [
     id: 2,
     title: "To Do List",
     description:
-      "Project created during the WBS Coding School bootcamp 2023/2024. It contains basic HTML5, CSS3 and Javascript functionalities.",
+      "Project created during the WBS Coding School bootcamp 2023/2024. It contains basic HTML5, CSS3 and Javascript functionalities",
     image: "/todolist.png",
     tag: ["All", "Web", "Mobile"],
     gitUrl: "https://github.com/biernard1988/ToDoList",
@@ -28,7 +28,7 @@ const projectsData = [
     id: 3,
     title: "Blog",
     description:
-      "Project created during the WBS Coding School bootcamp 2023/2024. It contains basic HTML5, CSS3, Javascript, Reactjs functionalities.",
+      "Project created during the WBS Coding School bootcamp 2023/2024. It contains basic HTML5, CSS3, Javascript, Reactjs functionalities",
     image: "/orcute.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/biernard1988/blog-project",
@@ -38,7 +38,7 @@ const projectsData = [
     id: 4,
     title: "Cookbook",
     description:
-      "Project created during the WBS Coding School bootcamp 2023/2024. It contains basic HTML5, CSS3, Javascript, Reactjs functionalities.",
+      "Project created during the WBS Coding School bootcamp 2023/2024. It contains basic HTML5, CSS3, Javascript, Reactjs and Contentful functionalities",
     image: "/cookbook.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/biernard1988/cookbook",
@@ -48,7 +48,7 @@ const projectsData = [
     id: 5,
     title: "Pokefight",
     description:
-      "A game project created during the WBS Coding School bootcamp 2023/2024. It contains basic HTML5, CSS3, Javascript, Reactjs functionalities.",
+      "A game project created during the WBS Coding School bootcamp 2023/2024. It contains basic HTML5, CSS3, Javascript, Reactjs functionalities",
     image: "/pokefight.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/biernard1988/Pokefight",

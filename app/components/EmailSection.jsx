@@ -56,16 +56,15 @@ function EmailSection() {
   return (
     <section
       id="contact"
-      className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4"
+      className="grid md:grid-cols-2 my-12 md:my-12 py-20 gap-4"
     >
       <div>
         <h5 className="text-xl font-bold text-white my-2">Let's Connect</h5>
-        <p className="text-[#ADB7BE] mb-4 max-w-md">
-          {""}
+        <p className="text-[#ADB7BE] mb-4 max-w-md text-justify">
           I'm currently looking for new opportunities. If you have any
           questions, please don't hesitate to contact me.
         </p>
-        <div className="socials flex flex-row gap-2">
+        <div className="socials flex flex-row gap-2 my-6">
           <Link target="_blank" href="https://github.com/biernard1988">
             <FontAwesomeIcon icon={faGithub} style={{ fontSize: "2rem" }} />
           </Link>
@@ -78,10 +77,14 @@ function EmailSection() {
         </div>
       </div>
       <div>
-        <form className="flex flex-col gap-6" onSubmit={sendEmail} ref={form}>
+        <form
+          className="flex flex-col gap-6 max-w-lg"
+          onSubmit={sendEmail}
+          ref={form}
+        >
           <div className="mb-6">
             <label htmlFor="email" className="block mb-2 text-sm font-medium">
-              Your email
+              Your Email
             </label>
             <input
               name="email"

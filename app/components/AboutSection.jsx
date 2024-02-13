@@ -19,7 +19,6 @@ const Tab_Data = [
         <li>Bootstrap</li>
         <li>Tailwind</li>
         <li>Git</li>
-        <li>PostgreSQL</li>
         <li>MongoDB</li>
         <li>Linux</li>
       </ul>
