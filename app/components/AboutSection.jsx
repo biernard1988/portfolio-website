@@ -64,14 +64,16 @@ function AboutSection() {
     <section id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <Image
-          className="rounded-lg shadow-lg"
+          className="rounded-lg sm:h-72 md:h-80 lg:h-96"
           src="/coding.png"
           width={600}
           height={600}
           alt="coding"
         />
-        <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold mb-4">About Me</h2>
+        <div className="mt-4 md:mt-10 text-justify flex flex-col h-full">
+          <h2 className="text-4xl font-bold mb-4 place-self-center md:place-self-start">
+            About Me
+          </h2>
           <p className="text-base lg:text-lg ">
             Junior Web Developer: HTML5 | CSS3 | JavaScript | Reactjs | Nextjs |
             Nodejs | Bun | SQL | MongoDB | Bootstrap |Tailwind. Passionate about
