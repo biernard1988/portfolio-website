@@ -70,7 +70,7 @@ function AboutSection() {
           height={600}
           alt="coding"
         />
-        <div className="mt-4 md:mt-10 text-justify flex flex-col h-full">
+        <div className="mt-12 md:mt-10 text-justify flex flex-col h-full">
           <h2 className="text-4xl font-bold mb-4 place-self-center md:place-self-start">
             About Me
           </h2>
