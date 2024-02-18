@@ -5,6 +5,15 @@ import React from "react";
 import { TypeAnimation } from "react-type-animation";
 
 function HeroSection() {
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/CV - Bernard Costa.pdf";
+    link.download = "bernard_costa_cv.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section>
       <div className="grid grid-cols-1 md:grid-cols-12">
@@ -42,7 +51,10 @@ function HeroSection() {
               <b>Hire Me!</b>
             </Link>
 
-            <button className="px-6 py-3 w-full sm:w-fit bg-transparent rounded-full border-2 border-white hover:border-cyan-500 transition-all">
+            <button
+              onClick={handleDownload}
+              className="px-6 py-3 w-full sm:w-fit bg-transparent rounded-full border-2 border-white hover:border-cyan-500 transition-all"
+            >
               Download CV
             </button>
           </div>
