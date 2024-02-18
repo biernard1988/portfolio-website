@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
@@ -9,35 +9,25 @@ import "react-toastify/dist/ReactToastify.css";
 
 function EmailSection() {
   const form = useRef();
+  const [isSending, setIsSending] = useState(false);
 
-  /*  const [user, setUser] = useState({
-    email: "",
-    subject: "",
-    message: "",
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setUser({ ...user, [e.target.name]: value });
-  }; */
-
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm(
+    setIsSending(true);
+    try {
+      const result = await emailjs.sendForm(
         "service_7ge1p1q",
         "template_d2qteaz",
         form.current,
         "Fp4lObwyj0EFy-HWn"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
       );
+      console.log(result.text);
+      notify(); // Notificar quando o e-mail for enviado com sucesso
+    } catch (error) {
+      console.log(error.text);
+    } finally {
+      setIsSending(false);
+    }
   };
 
   const notify = () => {
@@ -51,6 +41,30 @@ function EmailSection() {
       progress: undefined,
       theme: "dark",
     });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const formData = new FormData(form.current);
+    // Verifica se todos os campos estão preenchidos
+    const allFieldsFilled = [...formData.values()].every(
+      (value) => value.trim() !== ""
+    );
+    if (allFieldsFilled) {
+      await sendEmail(e); // Se todos os campos estiverem preenchidos, envia o e-mail
+    } else {
+      // Caso contrário, exibe uma mensagem de erro
+      toast.error("Please fill in all fields", {
+        position: "top-right",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      });
+    }
   };
 
   return (
@@ -79,7 +93,7 @@ function EmailSection() {
       <div>
         <form
           className="flex flex-col gap-6 max-w-lg"
-          onSubmit={sendEmail}
+          onSubmit={handleSubmit}
           ref={form}
         >
           <div className="mb-6">
@@ -90,9 +104,7 @@ function EmailSection() {
               name="email"
               type="email"
               id="email"
-              /* onChange={handleChange}
-              value={user.email} */
-              required
+              /* required */
               placeholder="your@email.com"
               className="bg-[#18191E] border border-[#ADB7BE] placeholder-[#9CA2AE] rounded-lg p-2 text-sm w-full block"
             />
@@ -105,7 +117,7 @@ function EmailSection() {
               name="subject"
               type="text"
               id="subject"
-              required
+              /* required */
               placeholder="Your subject..."
               className="bg-[#18191E] border border-[#ADB7BE] placeholder-[#9CA2AE] rounded-lg p-2 text-sm w-full block"
             />
@@ -117,18 +129,19 @@ function EmailSection() {
             <textarea
               id="message"
               name="message"
-              required
+              /* required */
               placeholder="Send a message..."
               className="bg-[#18191E] border border-[#ADB7BE] placeholder-[#9CA2AE] rounded-lg p-2 text-sm w-full block"
             ></textarea>
           </div>
           <button
             type="submit"
-            onClick={notify}
-            value="Send"
-            className="bg-green-500 hover:bg-gradient-to-r from-cyan-500 to-green-500 hover:text-black font-medium py-2.5 px-5 rounded-lg w-full"
+            className={`bg-green-500 hover:bg-gradient-to-r from-cyan-500 to-green-500 hover:text-black font-medium py-2.5 px-5 rounded-lg w-full ${
+              isSending ? "opacity-50 cursor-not-allowed" : ""
+            }`}
+            disabled={isSending}
           >
-            Send Message
+            {isSending ? "Sending..." : "Send Message"}
           </button>
           <ToastContainer
             position="top-right"
