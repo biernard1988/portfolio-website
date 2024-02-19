@@ -26,13 +26,13 @@ const projectsData = [
   },
   {
     id: 3,
-    title: "Blog",
+    title: "Orcute",
     description:
-      "Project created during the WBS Coding School bootcamp 2023/2024. It contains basic HTML5, CSS3, Javascript, Reactjs functionalities",
+      "A blog project created during the WBS Coding School bootcamp 2023/2024. It contains basic HTML5, CSS3, Javascript, Reactjs functionalities",
     image: "/orcute.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/biernard1988/blog-project",
-    previewUrl: "#",
+    previewUrl: "https://orcute.vercel.app/",
   },
   {
     id: 4,
@@ -42,7 +42,7 @@ const projectsData = [
     image: "/cookbook.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/biernard1988/cookbook",
-    previewUrl: "#",
+    previewUrl: "https://cookbook-wd44.vercel.app/",
   },
   {
     id: 5,
