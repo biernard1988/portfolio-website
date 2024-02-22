@@ -75,9 +75,9 @@ function AboutSection() {
           </h2>
           <p className="text-base lg:text-lg ">
             Junior Web Developer: HTML5 | CSS3 | JavaScript | Reactjs | Nextjs |
-            Nodejs | Bun | SQL | MongoDB | Bootstrap |Tailwind. Passionate about
-            learning more and more new technologies and being a better person
-            for myself and the community.
+            Nodejs | Bunjs | SQL | MongoDB | Bootstrap |Tailwind. Passionate
+            about learning more and more new technologies and being a better
+            person for myself and the community.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
