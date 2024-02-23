@@ -63,9 +63,9 @@ function HeroSection() {
           <div className="rounded-full bg-[#4c514d76] w-[320px] h-[320px] relative">
             <Image
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              src="/eu2.png"
-              width={180}
-              height={350}
+              src="/eu1.png"
+              width={210}
+              height={390}
               alt="My profile picture"
             />
           </div>
