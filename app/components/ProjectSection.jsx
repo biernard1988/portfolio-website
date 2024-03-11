@@ -58,11 +58,31 @@ const projectsData = [
     id: 6,
     title: "Country List",
     description:
-      "Country List project for study purposes using Next.js and Tailwind CSS",
+      "Country List project created for study purposes using Nextjs, Typescript, Tailwind CSS, REST API and Lucide Icons",
     image: "/countrylist.png",
     tag: ["All", "Web", "Mobile"],
     gitUrl: "https://github.com/biernard1988/country-list",
     previewUrl: "https://country-list-gamma.vercel.app/",
+  },
+  {
+    id: 7,
+    title: "Movie List",
+    description:
+      "Movie List project created for study purposes using Nextjs, Tailwind CSS, REST API and Lucide Icons",
+    image: "/movie-list.png",
+    tag: ["All", "Web", "Mobile"],
+    gitUrl: "https://github.com/biernard1988/movie-list",
+    previewUrl: "https://movie-list-bcosta.vercel.app/",
+  },
+  {
+    id: 8,
+    title: "MyWeather App",
+    description:
+      "Weather App project created for study purposes using Nextjs, Tailwind CSS, REST API and React Icons",
+    image: "/weather-app.png",
+    tag: ["All", "Web", "Mobile"],
+    gitUrl: "https://github.com/biernard1988/weather-app",
+    previewUrl: "https://weather-app-bcosta.vercel.app/",
   },
 ];
 
