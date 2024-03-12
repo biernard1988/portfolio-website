@@ -28,7 +28,7 @@ const projectsData = [
     id: 3,
     title: "Orcute",
     description:
-      "A blog project created during the WBS Coding School bootcamp 2023/2024. It contains basic HTML5, CSS3, Javascript, Reactjs functionalities",
+      "A blog project created during the WBS Coding School bootcamp 2023/2024. It contains basic HTML5, CSS3, Javascript and Reactjs",
     image: "/orcute.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/biernard1988/blog-project",
@@ -38,7 +38,7 @@ const projectsData = [
     id: 4,
     title: "Cookbook",
     description:
-      "Project created during the WBS Coding School bootcamp 2023/2024. It contains basic HTML5, CSS3, Javascript, Reactjs and Contentful functionalities",
+      "Project created during the WBS Coding School bootcamp 2023/2024. It contains basic HTML5, CSS3, Javascript, Reactjs and Contentful CMS",
     image: "/cookbook.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/biernard1988/cookbook",
@@ -48,7 +48,7 @@ const projectsData = [
     id: 5,
     title: "Pokefight",
     description:
-      "A game project created during the WBS Coding School bootcamp 2023/2024. It contains basic HTML5, CSS3, Javascript, Reactjs functionalities",
+      "A game project created during the WBS Coding School bootcamp 2023/2024. It contains basic HTML5, CSS3, Javascript and Reactjs",
     image: "/pokefight.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/biernard1988/Pokefight",
@@ -66,7 +66,7 @@ const projectsData = [
   },
   {
     id: 7,
-    title: "Movie List",
+    title: "KinoFlix",
     description:
       "Movie List project created for study purposes using Nextjs, Tailwind CSS, REST API and Lucide Icons",
     image: "/movie-list.png",
