@@ -62,7 +62,7 @@ const projectsData = [
     image: "/countrylist.png",
     tag: ["All", "Web", "Mobile"],
     gitUrl: "https://github.com/biernard1988/country-list",
-    previewUrl: "https://country-list-gamma.vercel.app/",
+    previewUrl: "https://country-list-bcosta.vercel.app/",
   },
   {
     id: 7,
