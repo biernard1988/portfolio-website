@@ -16,6 +16,16 @@ const projectsData = [
   },
   {
     id: 2,
+    title: "Chácara GAIA",
+    description:
+      "Chácara GAIA is a website promoting ecotourism and leisure activities. It uses React and Next.js for a dynamic and visually appealing user experience.",
+    image: "/gaia.png",
+    tag: ["All", "Web", "Mobile"],
+    gitUrl: "https://github.com/biernard1988/gaia",
+    previewUrl: "https://chacaragaia.vercel.app/",
+  },
+  {
+    id: 3,
     title: "Country List",
     description:
       "Explore a comprehensive list of countries with their flags and names, and easily search for specific countries using a user-friendly search bar. Technologies applied: React, Nextjs, Typescript, HTML5, CSS3, Tailwind, Lucide Icons, Git/Github, Node/Bun, REST API, Vercel",
@@ -25,7 +35,7 @@ const projectsData = [
     previewUrl: "https://country-list-bcosta.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     title: "KinoFlix",
     description:
       "This application fetches and displays a grid of popular movies from The Movie Database (TMDb). It features a clean and responsive layout that adapts to different screen sizes. Technologies applied: React, Nextjs, Javascript, HTML5, CSS3, Tailwind, Lucide Icons, Git/Github, Node/Bun, REST API, Vercel",
@@ -35,7 +45,7 @@ const projectsData = [
     previewUrl: "https://movie-list-bcosta.vercel.app/",
   },
   {
-    id: 4,
+    id: 5,
     title: "MyWeather App",
     description:
       "This application fetches and displays weather information for a given city. It features a visually appealing interface with a wallpaper background and clear weather data presentation. Technologies applied: React, Nextjs, Javascript, HTML5, CSS3, Tailwind, React Icons, Git/Github, Node/Bun, REST API, Vercel",
@@ -45,7 +55,7 @@ const projectsData = [
     previewUrl: "https://weather-app-bcosta.vercel.app/",
   },
   {
-    id: 5,
+    id: 6,
     title: "Pokefight",
     description:
       "A game project created during the WBS Coding School bootcamp 2023/2024. It contains basic HTML5, CSS3, Javascript and Reactjs",
@@ -55,7 +65,7 @@ const projectsData = [
     previewUrl: "https://pokefight-044.netlify.app/",
   },
   {
-    id: 6,
+    id: 7,
     title: "To Do List",
     description:
       "Project created during the WBS Coding School bootcamp 2023/2024. It contains basic HTML5, CSS3 and Javascript functionalities",
@@ -65,7 +75,7 @@ const projectsData = [
     previewUrl: "https://biernard1988.github.io/ToDoList/",
   },
   {
-    id: 7,
+    id: 8,
     title: "Orcute",
     description:
       "A blog project created during the WBS Coding School bootcamp 2023/2024. It contains basic HTML5, CSS3, Javascript and Reactjs",
@@ -75,7 +85,7 @@ const projectsData = [
     previewUrl: "https://orcute.vercel.app/",
   },
   {
-    id: 8,
+    id: 9,
     title: "Cookbook",
     description:
       "Project created during the WBS Coding School bootcamp 2023/2024. It contains basic HTML5, CSS3, Javascript, Reactjs and Contentful CMS",
