@@ -18,7 +18,7 @@ const projectsData = [
     id: 2,
     title: "Chácara GAIA",
     description:
-      "Chácara GAIA is a website promoting ecotourism and leisure activities. It uses React and Next.js for a dynamic and visually appealing user experience.",
+      "This is a website dedicated to promoting ecotourism and offering seasonal rentals at a charming countryside farm in Brazil. Technologies applied: Nextjs, Typescript, HTML5, CSS3, Tailwind, Shadcnui, Git/Github, Node/Bun, Vercel",
     image: "/gaia.png",
     tag: ["All", "Web", "Mobile"],
     gitUrl: "https://github.com/biernard1988/gaia",
@@ -28,7 +28,7 @@ const projectsData = [
     id: 3,
     title: "Country List",
     description:
-      "Explore a comprehensive list of countries with their flags and names, and easily search for specific countries using a user-friendly search bar. Technologies applied: React, Nextjs, Typescript, HTML5, CSS3, Tailwind, Lucide Icons, Git/Github, Node/Bun, REST API, Vercel",
+      "Explore a comprehensive list of countries with their flags and names, and easily search for specific countries using a user-friendly search bar. Technologies applied: Nextjs, Typescript, HTML5, CSS3, Tailwind, Lucide Icons, Git/Github, Node/Bun, REST API, Vercel",
     image: "/countrylist.png",
     tag: ["All", "Web", "Mobile"],
     gitUrl: "https://github.com/biernard1988/country-list",
@@ -38,7 +38,7 @@ const projectsData = [
     id: 4,
     title: "KinoFlix",
     description:
-      "This application fetches and displays a grid of popular movies from The Movie Database (TMDb). It features a clean and responsive layout that adapts to different screen sizes. Technologies applied: React, Nextjs, Javascript, HTML5, CSS3, Tailwind, Lucide Icons, Git/Github, Node/Bun, REST API, Vercel",
+      "This application fetches and displays a grid of popular movies from The Movie Database (TMDb). It features a clean and responsive layout that adapts to different screen sizes. Technologies applied: Nextjs, Javascript, HTML5, CSS3, Tailwind, Lucide Icons, Git/Github, Node/Bun, REST API, Vercel",
     image: "/movie-list.png",
     tag: ["All", "Web", "Mobile"],
     gitUrl: "https://github.com/biernard1988/movie-list",
@@ -48,7 +48,7 @@ const projectsData = [
     id: 5,
     title: "MyWeather App",
     description:
-      "This application fetches and displays weather information for a given city. It features a visually appealing interface with a wallpaper background and clear weather data presentation. Technologies applied: React, Nextjs, Javascript, HTML5, CSS3, Tailwind, React Icons, Git/Github, Node/Bun, REST API, Vercel",
+      "This application fetches and displays weather information for a given city. It features a visually appealing interface with a wallpaper background and clear weather data presentation. Technologies applied:  Nextjs, Javascript, HTML5, CSS3, Tailwind, React Icons, Git/Github, Node/Bun, REST API, Vercel",
     image: "/weather-app.png",
     tag: ["All", "Web", "Mobile"],
     gitUrl: "https://github.com/biernard1988/weather-app",
