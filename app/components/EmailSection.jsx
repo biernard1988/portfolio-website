@@ -1,34 +1,34 @@
-"use client";
-import React, { useRef, useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import Link from "next/link";
-import emailjs from "@emailjs/browser";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+"use client"
+import React, { useRef, useState } from "react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
+import Link from "next/link"
+import emailjs from "@emailjs/browser"
+import { ToastContainer, toast } from "react-toastify"
+import "react-toastify/dist/ReactToastify.css"
 
 function EmailSection() {
-  const form = useRef();
-  const [isSending, setIsSending] = useState(false);
+  const form = useRef()
+  const [isSending, setIsSending] = useState(false)
 
   const sendEmail = async (e) => {
-    e.preventDefault();
-    setIsSending(true);
+    e.preventDefault()
+    setIsSending(true)
     try {
       const result = await emailjs.sendForm(
         "service_7ge1p1q",
         "template_d2qteaz",
         form.current,
         "Fp4lObwyj0EFy-HWn"
-      );
-      console.log(result.text);
-      notify(); // Notificar quando o e-mail for enviado com sucesso
+      )
+      console.log(result.text)
+      notify() // Notificar quando o e-mail for enviado com sucesso
     } catch (error) {
-      console.log(error.text);
+      console.log(error.text)
     } finally {
-      setIsSending(false);
+      setIsSending(false)
     }
-  };
+  }
 
   const notify = () => {
     toast.success("Email sent Successfully", {
@@ -40,18 +40,18 @@ function EmailSection() {
       draggable: true,
       progress: undefined,
       theme: "dark",
-    });
-  };
+    })
+  }
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    const formData = new FormData(form.current);
+    e.preventDefault()
+    const formData = new FormData(form.current)
     // Verifica se todos os campos estão preenchidos
     const allFieldsFilled = [...formData.values()].every(
       (value) => value.trim() !== ""
-    );
+    )
     if (allFieldsFilled) {
-      await sendEmail(e); // Se todos os campos estiverem preenchidos, envia o e-mail
+      await sendEmail(e) // Se todos os campos estiverem preenchidos, envia o e-mail
     } else {
       // Caso contrário, exibe uma mensagem de erro
       toast.error("Please fill in all fields", {
@@ -63,9 +63,9 @@ function EmailSection() {
         draggable: true,
         progress: undefined,
         theme: "dark",
-      });
+      })
     }
-  };
+  }
 
   return (
     <section
@@ -104,7 +104,6 @@ function EmailSection() {
               name="email"
               type="email"
               id="email"
-              /* required */
               placeholder="your@email.com"
               className="bg-[#18191E] border border-[#ADB7BE] placeholder-[#9CA2AE] rounded-lg p-2 text-sm w-full block"
             />
@@ -117,7 +116,6 @@ function EmailSection() {
               name="subject"
               type="text"
               id="subject"
-              /* required */
               placeholder="Your subject..."
               className="bg-[#18191E] border border-[#ADB7BE] placeholder-[#9CA2AE] rounded-lg p-2 text-sm w-full block"
             />
@@ -129,9 +127,10 @@ function EmailSection() {
             <textarea
               id="message"
               name="message"
-              /* required */
+              rows="6"
+              color="33"
               placeholder="Send a message..."
-              className="bg-[#18191E] border border-[#ADB7BE] placeholder-[#9CA2AE] rounded-lg p-2 text-sm w-full block"
+              className="bg-[#18191E] border border-[#ADB7BE] placeholder-[#9CA2AE] rounded-lg p-2 text-sm w-full block resize-none"
             ></textarea>
           </div>
           <button
@@ -158,7 +157,7 @@ function EmailSection() {
         </form>
       </div>
     </section>
-  );
+  )
 }
 
-export default EmailSection;
+export default EmailSection
