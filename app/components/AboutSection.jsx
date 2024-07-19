@@ -42,8 +42,18 @@ const Tab_Data = [
     content: (
       <ul className="list-disc pl-2">
         <li>
-          Full Stack Web and App Development - WBS Conding School (2023-2004)
+          Full Stack Web and App Development - WBS Coding School (2023-2004)
         </li>
+        <li>Node.js Essential Training - Eve Porcello (2024)</li>
+        <li>TypeScript Essential Training - Jess Chadwick (2024)</li>
+        <li>
+          <li>
+            .NET Fundamentals: Concepts, APIs, and Libraries in the .NET
+            Framework - Walt Ritscher (2023)
+          </li>
+          AWS Essential Training for Developers - Jeremy Villeneuve (2023)
+        </li>
+        <li>Learning Next.js - Sandy Ludosky (2022)</li>
         <li>Advanced English - Yázigi Manaus (2013)</li>
       </ul>
     ),
