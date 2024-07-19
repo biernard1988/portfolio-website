@@ -1,18 +1,18 @@
-"use client";
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
-import { TypeAnimation } from "react-type-animation";
+"use client"
+import Image from "next/image"
+import Link from "next/link"
+import React from "react"
+import { TypeAnimation } from "react-type-animation"
 
 function HeroSection() {
   const handleDownload = () => {
-    const link = document.createElement("a");
-    link.href = "/CV - Bernard Costa.pdf";
-    link.download = "bernard_costa_cv.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+    const link = document.createElement("a")
+    link.href = "/CV - Bernard Costa.pdf"
+    link.download = "bernard_costa_cv.pdf"
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+  }
 
   return (
     <section>
@@ -39,9 +39,10 @@ function HeroSection() {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base text-justify sm:text-lg lg:text-xl mb-6 lg:mb-0">
-            I recently finished a 5 month intensive web & app development course
-            at WBS Coding School - Berlin. I am currently looking for
-            opportunities as Entry/Junior Web Developer.
+            I recently completed a five-month intensive web and app development
+            course at WBS Coding School in Berlin. I am now seeking
+            opportunities as an entry-level for junior web developer, frontend
+            developer, software developer and software testing engineer.
           </p>
           <div className="flex flex-col items-center lg:items-start gap-3 mt-5">
             <Link
@@ -72,7 +73,7 @@ function HeroSection() {
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default HeroSection;
+export default HeroSection

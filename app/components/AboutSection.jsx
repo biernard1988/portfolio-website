@@ -1,7 +1,7 @@
-"use client";
-import Image from "next/image";
-import React, { useState, useTransition } from "react";
-import TabButton from "./TabButton";
+"use client"
+import Image from "next/image"
+import React, { useState, useTransition } from "react"
+import TabButton from "./TabButton"
 
 const Tab_Data = [
   {
@@ -48,17 +48,17 @@ const Tab_Data = [
       </ul>
     ),
   },
-];
+]
 
 function AboutSection() {
-  const [tab, setTab] = useState("skills");
-  const [isPending, startTransition] = useTransition();
+  const [tab, setTab] = useState("skills")
+  const [isPending, startTransition] = useTransition()
 
   const handleTabChange = (id) => {
     startTransition(() => {
-      setTab(id);
-    });
-  };
+      setTab(id)
+    })
+  }
   return (
     <section id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
@@ -74,10 +74,13 @@ function AboutSection() {
             About Me
           </h2>
           <p className="text-base lg:text-lg ">
-            Full Stack Web Developer: HTML5 | CSS3 | JavaScript | React | Nextjs
-            | Node | Bun | SQL | NonSQL | Bootstrap |Tailwind. Passionate about
-            learning more and more new technologies and being a better person
-            for myself and the community.
+            Career changer as Web Developer with a background in Biology and
+            Seminars Facilitator in UNICEF. Proficient in Fullstack Web and App
+            Development, acquired deeply skills as Frontend Developer at WBS
+            Coding School. Effective communicator with a proven ability to
+            facilitate clear and concise collaboration among cross-functional
+            teams, ensuring alignment and fostering a cohesive environment for
+            delivering successful software projects.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
@@ -105,7 +108,7 @@ function AboutSection() {
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default AboutSection;
+export default AboutSection
