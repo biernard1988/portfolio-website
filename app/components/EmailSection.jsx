@@ -23,6 +23,7 @@ function EmailSection() {
       )
       console.log(result.text)
       notify() // Notificar quando o e-mail for enviado com sucesso
+      form.current.reset()
     } catch (error) {
       console.log(error.text)
     } finally {
