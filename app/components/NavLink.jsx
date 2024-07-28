@@ -1,4 +1,3 @@
-import Link from "next/link"
 import LinkWithoutId from "./LinkWithoutId"
 
 function NavLink({ href, title }) {

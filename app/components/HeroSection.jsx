@@ -1,8 +1,8 @@
 "use client"
 import Image from "next/image"
-import Link from "next/link"
 import React from "react"
 import { TypeAnimation } from "react-type-animation"
+import LinkWithoutId from "./LinkWithoutId"
 
 function HeroSection() {
   const handleDownload = () => {
@@ -45,12 +45,12 @@ function HeroSection() {
             developer, software developer and software testing engineer.
           </p>
           <div className="flex flex-col items-center lg:items-start gap-3 mt-5">
-            <Link
+            <LinkWithoutId
               href="#contact"
               className="bg-gradient-to-br from-cyan-500 to-green-600 hover:bg-gradient-to-bl hover:text-black px-6 py-3 w-full sm:w-fit rounded-full transition-all"
             >
               <b>Hire Me!</b>
-            </Link>
+            </LinkWithoutId>
 
             <button
               onClick={handleDownload}
