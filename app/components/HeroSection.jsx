@@ -29,7 +29,7 @@ function HeroSection() {
                 1000,
                 "Frontend Developer",
                 1000,
-                "Mobile Developer",
+                "Software Engineer",
                 1000,
               ]}
               wrapper="span"
