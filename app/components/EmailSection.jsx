@@ -82,7 +82,7 @@ function EmailSection() {
         <p>Bernard Almeida da Costa</p>
         <p>Raubersrieder Weg, 57. Wendelstein - Germany</p>
         <p>PLZ: 90530</p>
-        <p>Tel: +49 1623669251 or +351 928065203</p>
+        <p>Tel: +49 1623669251</p>
         <div className="socials flex flex-row gap-2 my-6">
           <Link target="_blank" href="https://github.com/biernard1988">
             <FontAwesomeIcon icon={faGithub} style={{ fontSize: "2rem" }} />

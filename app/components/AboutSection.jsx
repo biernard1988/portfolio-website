@@ -41,6 +41,7 @@ const Tab_Data = [
     title: "Certifications",
     content: (
       <ul className="list-disc pl-2">
+        <li>Berlin Battle of the Bootcamps 2024 - 1st Place Winner</li>
         <li>
           Full Stack Web and App Development - WBS Coding School (2023-2004)
         </li>
@@ -84,13 +85,18 @@ function AboutSection() {
             About Me
           </h2>
           <p className="text-base lg:text-lg ">
-            Career changer as Web Developer with a background in Biology and
-            Seminars Facilitator in UNICEF. Proficient in Fullstack Web and App
-            Development, acquired deeply skills as Frontend Developer at WBS
-            Coding School. Effective communicator with a proven ability to
-            facilitate clear and concise collaboration among cross-functional
-            teams, ensuring alignment and fostering a cohesive environment for
-            delivering successful software projects.
+            As a versatile career changer passionate about Frontend Development
+            and Tech/IT/Customer Support roles, I bring a unique blend of
+            technical expertise and interpersonal skills. My foundation in
+            Fullstack Web and App Development, particularly as a Frontend
+            Developer at WBS Coding School, equips me with hands-on proficiency
+            in building intuitive UIs and troubleshooting complex web
+            applications. Complementing this, my background in Biology provides
+            analytical rigor, while experience as a Seminars Facilitator at
+            UNICEF has honed my ability to effectively communicate, collaborate,
+            and provide user-centered support. I am an effective communicator
+            skilled at facilitating clear collaboration and dedicated to
+            delivering successful projects and ensuring customer satisfaction.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton

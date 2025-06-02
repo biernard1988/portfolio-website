@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 function Footer() {
   return (
@@ -7,10 +7,10 @@ function Footer() {
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-green-500">
           BERNARD COSTA
         </span>
-        <p className="text-slate-600">All rights reserved - 2024</p>
+        <p className="text-slate-600">All rights reserved - 2025</p>
       </div>
     </footer>
-  );
+  )
 }
 
-export default Footer;
+export default Footer

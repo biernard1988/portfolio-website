@@ -29,7 +29,11 @@ function HeroSection() {
                 1000,
                 "Frontend Developer",
                 1000,
-                "Software Engineer",
+                "UI Developer",
+                1000,
+                "Tech Support",
+                1000,
+                "IT Support",
                 1000,
               ]}
               wrapper="span"
@@ -39,10 +43,10 @@ function HeroSection() {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base text-justify sm:text-lg lg:text-xl mb-6 lg:mb-0">
-            I recently completed a five-month intensive web and app development
-            course at WBS Coding School in Berlin. I am now seeking
-            opportunities as an entry-level for junior web developer, frontend
-            developer, software developer and software testing engineer.
+            I recently completed a five-month intensive Full-stack Web and App
+            development course at WBS Coding School in Berlin. I am now seeking
+            opportunities as an entry or junior level, Frontend developer, UI
+            developer, Tech Support, or IT Support.
           </p>
           <div className="flex flex-col items-center lg:items-start gap-3 mt-5">
             <LinkWithoutId
